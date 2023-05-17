@@ -1,62 +1,48 @@
-body{
-    font-family: 'Poppins', sans-serif;
-}
-.cabecalho{
-    background-color: #0e52e4;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal : 'Inter';
 }
 
-.cabecalho-imagem{
- width: 20%;
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.cabecalho-lista-item{
- display: inline-block;
- margin: 0 16px;
- padding: 24px 0;
- font-size: 24px;
-}
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.escola-imagem{
-    width: 20%;
+.container{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 50% 50%;
 }
 
-.escola{
-    background-image: linear-gradient(#390ee4,#0073ff);
-    color:rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0;
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
 }
-
-.escola-conteudo{
-    width: 35%;
+ .botao2 {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
 }
+ .container__titulo {
+    font-size: 28px;
+    font-weight: 700;
 
-.escola-titulo{
-    padding: 24px 0;
-}
-
-.estudante-imagem{
-    width: 300px;
-}
-
-.estudante-icone{
-    width: 50px;
-    padding: 4px 8px;
-}
-
-.estudante-div{
-    text-align: center;
-    padding: 16px 0; 
-}                                                              
+ }
